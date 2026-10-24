@@ -1,0 +1,54 @@
+# A raiz contém apenas os arquivos necessários ao projeto.
+/*
+!/.gitignore
+!/.env.example
+!/README.md
+!/app.py
+!/pytest.ini
+!/requirements.txt
+!/requirements-dev.txt
+!/src/
+!/tests/
+!/scripts/
+!/docs/
+!/data/
+
+# Código da aplicação e suporte dos testes.
+/src/*
+!/src/banco_agil/
+/src/banco_agil/*
+!/src/banco_agil/*.py
+/tests/*
+!/tests/*.py
+/scripts/*
+!/scripts/make_zip.sh
+!/scripts/make_zip.py
+!/scripts/test_local.py
+
+# Documentação da versão entregue. Os registros anteriores ficam locais.
+/docs/*
+!/docs/ARQUITETURA.md
+!/docs/OPERACAO.md
+!/docs/TESTES.md
+
+# Apenas os três CSVs usados pela aplicação.
+/data/*
+!/data/clientes.csv
+!/data/score_limite.csv
+!/data/solicitacoes_aumento_limite.csv
+
+# Segredos, caches e artefatos continuam privados em qualquer pasta.
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+*.tmp
+*.bak
+*.zip
+*.tar
+*.tar.gz
